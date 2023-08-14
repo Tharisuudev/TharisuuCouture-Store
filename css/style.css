@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
 
 * {
   margin: 0;
@@ -46,7 +46,7 @@ header {
 .logo {
   font-size: 2.5rem;
   color: var(--text-color);
-  font-family: 'Noto Serif JP', sans-serif;
+  font-family: "Noto Serif JP", sans-serif;
 }
 
 .navbar a {
@@ -54,6 +54,7 @@ header {
   color: var(--text-color);
   font-weight: 600;
   margin-left: 3.5rem;
+  transition: 0.5s;
 }
 
 .navbar a:hover,
@@ -66,4 +67,136 @@ header {
   color: var(--text-color);
   cursor: pointer;
   display: none;
+}
+
+/* content  */
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  background: url(/assets/wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-box {
+  margin-left: 10%;
+}
+
+.container-box h2 {
+  font-weight: 400;
+  font-size: 36px;
+  color: orange;
+}
+
+.container-box label {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.container-box label span {
+  color: rgb(199, 43, 199);
+}
+
+.container-box a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  color: blueviolet;
+  letter-spacing: 3px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 4px 4px 10px blueviolet, -4px -4px 10px #fafafa;
+}
+
+.container-box a:hover {
+  box-shadow: -4px 4px 10px #fafafa, -4px -4px 10px #fafafa;
+}
+
+/* category  */
+
+.category {
+  background: #fafafa;
+  margin: 80px 0;
+}
+
+.category-title {
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.category-title h2 {
+  text-align: center;
+}
+
+.category .category-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category .category-box .box {
+  margin: 30px 20px;
+}
+
+.category .category-box img {
+  width: 600px;
+  border-radius: 5px;
+  height: 328px;
+}
+
+.category .category-box .box-content {
+  position: absolute;
+  z-index: 1;
+  margin-left: 30px;
+  margin-top: 100px;
+}
+
+.category .category-box .box-content h3 {
+  color: rgb(255, 103, 103);
+}
+
+.category .category-box .box-content label {
+  display: block;
+  font-size: 30px;
+  color: rgb(255, 103, 103);
+}
+
+.category .category-box .box-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 25px;
+  font-size: 14px;
+  border-radius: 25px;
+  background: white;
+  transition: all .19s ease-in;
+  color: black;
+}
+
+.category .category-box .box-content a:hover {
+  background: rgb(255, 237, 237);
+}
+
+.category .category-box .box-content.b2 {
+  margin-left: 370px;
+  text-align: right;
+  margin-top: 100px;
+}
+
+.category .category-box .box-content h3 {
+  color: rgb(91, 253, 202);
+}
+
+.category .category-box .box-content.b2 label {
+  color: rgb(91, 253, 202);
 }

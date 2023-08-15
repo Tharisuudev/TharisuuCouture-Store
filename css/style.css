@@ -58,9 +58,6 @@ li {
   transition: font-size 150ms;
 }
 
-@media screen and (max-width: 767px) {
-}
-
 /* Inside this block of code, is the style of the navbar list hover bar */
 .navbar ul {
   --_gap: 2rem;
@@ -126,94 +123,6 @@ nav li:has(+ :hover)::after {
 
 .navbar a:hover {
   color: blueviolet;
-}
-
-@media screen and (max-width: 767px) {
-  /* Logo Changes */
-  .logo {
-    top: 0px;
-    font-size: 2.1rem;
-  }
-  header {
-    align-items: flex-start;
-  }
-
-  /* Navbar Changes */
-  .navbar li {
-    top: 30%;
-    padding-block: calc(var(--_gap) / 3);
-    font-size: 13px;
-    white-space: nowrap;
-    max-width: 100%;
-    opacity: 0;
-  }
-  .navbar {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 18vw;
-    height: 92vh;
-    background-color: transparent;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-  }
-  .navbar.show {
-    transform: translateX(0);
-  }
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(25px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  @keyframes navLinkFadeBack {
-    from {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    to {
-      opacity: 0;
-      transform: translateX(25px);
-    }
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    --_gap: 5rem;
-  }
-
-  .navbar li::after {
-    bottom: 10px;
-  }
-
-  /* Hamburger Menu Changes */
-  .mobile-menu {
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    right: 50px;
-  }
-  .mobile-menu div {
-    width: 30px;
-    height: 0.5px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-}
-
-.mobile-menu.show .line1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-.mobile-menu.show .line2 {
-  opacity: 0;
-}
-.mobile-menu.show .line3 {
-  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 /* Here ends the changes on this style */
@@ -358,6 +267,35 @@ nav li:has(+ :hover)::after {
   color: rgb(91, 253, 202);
 }
 
+.fadeIn {
+  animation: sectionFadeIn 2.5s ease forwards;
+}
+
+.fadeOut {
+  animation: sectionFadeOut 2.5s ease forwards;
+}
+
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes sectionFadeOut {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(30);
+  }
+}
+
 #hero {
   background-image: url(/assets/modelman.jpg);
   background-repeat: no-repeat;
@@ -383,4 +321,109 @@ nav li:has(+ :hover)::after {
 #hero button {
   border: 0;
   padding: 14px 80px 14px 65px;
+}
+
+/* This is an MediaQuery for responsivety */
+
+@media screen and (max-width: 1024px) {
+  /* Logo Changes */
+  .logo {
+    top: 0px;
+    font-size: 2.1rem;
+  }
+  header {
+    align-items: flex-start;
+  }
+
+  /* Navbar Changes */
+  .navbar li {
+    top: 30%;
+    padding-block: calc(var(--_gap) / 3);
+    font-size: 13px;
+    white-space: nowrap;
+    max-width: 100%;
+    opacity: 0;
+  }
+  .navbar {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    padding-left: 3px;
+    width: 18vw;
+    height: 92vh;
+    background-color: transparent;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .navbar.show {
+    transform: translateX(0);
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    --_gap: 5rem;
+  }
+
+  .navbar li::after {
+    bottom: 10px;
+    padding-left: 7px;
+  }
+
+  /* Hamburger Menu Changes */
+  .mobile-menu {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 50px;
+  }
+  .mobile-menu div {
+    width: 30px;
+    height: 0.5px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+  .mobile-menu.show .line1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .mobile-menu.show .line2 {
+    opacity: 0;
+  }
+  .mobile-menu.show .line3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+}
+/* End of the Media Query */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
 }

@@ -54,12 +54,25 @@ header {
   color: var(--text-color);
   font-weight: 600;
   margin-left: 3.5rem;
-  transition: 0.5s;
+  transition: 0.5s ease;
+  position: relative;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--cinza-color);
+  color: blueviolet;
+}
+
+/* hover do navbar roxa  */
+.navbar a.active::after,
+.navbar a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
 }
 
 #menu-icon {
@@ -179,7 +192,7 @@ header {
   font-size: 14px;
   border-radius: 25px;
   background: white;
-  transition: all .19s ease-in;
+  transition: all 0.19s ease-in;
   color: black;
 }
 
@@ -199,4 +212,30 @@ header {
 
 .category .category-box .box-content.b2 label {
   color: rgb(91, 253, 202);
+}
+
+#hero {
+  background-image: url(/assets/modelman.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: var(--text-color);
+}
+
+#hero button {
+  border: 0;
+  padding: 14px 80px 14px 65px;
 }

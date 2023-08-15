@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +14,8 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Noto Sans JP", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -43,37 +47,85 @@ header {
   z-index: 100;
 }
 
+li {
+  list-style-type: none;
+}
+
 .logo {
   font-size: 2.5rem;
   color: var(--text-color);
-  font-family: "Noto Serif JP", sans-serif;
+  font-family: 'Noto Serif JP', sans-serif;
 }
 
-.navbar a {
-  font-size: 1.7rem;
-  color: var(--text-color);
-  font-weight: 600;
-  margin-left: 3.5rem;
-  transition: 0.5s ease;
+/* Inside this block of code, is the style of the navbar list hover bar */
+.navbar ul {
+  --_gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  padding-inline: calc(var(--_gap) / 3);
   position: relative;
 }
 
-.navbar a:hover,
+.navbar li::after {
+  content: '';
+  height: 3px;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  bottom: -6px;
+  background: blueviolet;
+  pointer-events: none;
+
+  scale: 0 1;
+  transition: scale 300ms, translate 350ms;
+}
+
+nav li:hover::after {
+  scale: 1 1;
+}
+
+nav li:hover + li::after {
+  translate: -100%;
+}
+
+nav li:has(+ :hover)::after {
+  translate: 100%;
+}
+
+.navbar li a {
+  color: var(--text-color);
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 550ms;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+}
+
 .navbar a.active {
   color: blueviolet;
 }
 
-/* hover do navbar roxa  */
-.navbar a.active::after,
-.navbar a:hover::after {
-  content: "";
-  width: 30%;
-  height: 2px;
-  background-color: blueviolet;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
+.navbar ul:hover a:not(:hover).active {
+  color: inherit;
 }
+
+.navbar a:hover {
+  color: blueviolet;
+}
+
+/* Here ends the changes on this style */
 
 #menu-icon {
   font-size: 3.6rem;
@@ -133,6 +185,7 @@ header {
 
 .container-box a:hover {
   box-shadow: -4px 4px 10px #fafafa, -4px -4px 10px #fafafa;
+  color: orange;
 }
 
 /* category  */

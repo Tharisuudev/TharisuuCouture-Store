@@ -70,6 +70,7 @@ li {
 .navbar li {
   padding-inline: calc(var(--_gap) / 3);
   position: relative;
+  font-size: 1.4rem;
 }
 
 .navbar li::after {

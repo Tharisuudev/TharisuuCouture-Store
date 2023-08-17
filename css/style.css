@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 12px;
+}
+
 header {
   position: relative;
   display: flex;
@@ -68,12 +81,20 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
   .active .dropdown__menu {
     width: 35%;
   }
 }
 
 @media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
   header {
     justify-content: space-between;
   }
@@ -105,4 +126,80 @@ header {
 
 section {
   padding: 35px 20px;
+}
+/* GENERIC CARDS  */
+
+.card {
+  height: 500px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 0 1px 1px black;
+}
+.card__img {
+  height: 75%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card__brand {
+  font-size: 2rem;
+  color: pink;
+}
+
+.card__fourthtitle {
+  font-size: 2rem;
+  color: orangered;
+}
+
+.card__value {
+  color: rgba(48, 49, 45, 0.781);
+  font-size: 1.5rem;
+}
+
+.card__value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.featured__subtitle {
+  color: black;
+}
+
+.featured__text {
+  font-size: 2rem;
+  color: blueviolet;
+}
+
+.logo {
+  text-decoration: none;
+}
+.logo__figure {
+  width: 50px;
+  height: 50px;
+}
+
+.home {
+}
+.home__fourthtitle {
+}
+.home__title {
+}
+.home__text {
+}
+.home__img {
 }

@@ -31,4 +31,5 @@ function updateText() {
 
 updateText()
 
-setInterval(updateText, 4000)
+setInterval(updateText, 4000) 
+

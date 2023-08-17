@@ -9,7 +9,7 @@
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
 
   // explorer
   "explorer.compactFolders": false,
@@ -34,5 +34,11 @@
     }
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "[css]": {
+    "editor.defaultFormatter": "ms-vsliveshare.vsliveshare"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "ms-vsliveshare.vsliveshare"
+  }
 }

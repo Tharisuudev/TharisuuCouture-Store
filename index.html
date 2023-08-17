@@ -3,128 +3,252 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Tharisuu</title>
   </head>
   <body>
     <header>
-      <a href="#">
-        <img src="" alt="" />
+      <a class="logo" href="#"
+        >タリス Couture
+        <img
+          class="logo__figure"
+          src="/assets/logo/foto para perfil fundo branco.jpg"
+          alt="Logo1"
+        />
       </a>
       <div class="dropdown">
         <button class="dropdown__button"></button>
 
         <nav class="dropdown__menu menu">
           <a class="menu__link" href="#">Home</a>
-          <a class="menu__link" href="#">News</a>
-          <a class="menu__link" href="#">Contact</a>
-          <a class="menu__link" href="#">About</a>
+          <a class="menu__link" href="#">Shop</a>
+          <a class="menu__link" href="#">About Us</a>
+          <a class="menu__link" href="#">Contact Us</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section id="sec1">
+      <section class="section home">
         <div>
-          <h4>Trade-in-offer</h4>
-          <h1>
+          <h4 class="home__fourthtitle">Trade-in-offer</h4>
+          <h1 class="home__title">
             Super value deals
             <br />
             <span class="green">On all products</span>
           </h1>
-          <p>Save more with coupons & up to 70% off!</p>
-          <a href="" class="sec1-button">Shop Now</a>
+          <p class="home__text">Save more with coupons & up to 70% off!</p>
+          <a href="" class="home__link">Shop Now</a>
         </div>
-        <img src="" alt="" />
+        <img class="home__img" src="" alt="" />
       </section>
 
-      <section class="section">
-        <h2>Featured Products</h2>
-        <p>Summer Collection New Morden Design</p>
-        <div>
-          <div>
-            <img src="/assets/layout/prancheta1.png" alt="" />
+      <section class="section featured">
+        <h2 class="featured__subtitle">Featured Products</h2>
+        <p class="featured__text">Summer Collection New Morden Design</p>
+        <div class="featured__cards">
+          <div class="featured__card card">
+            <img
+              class="card__img"
+              src="/assets/models/camiseta branca fem.jpg"
+              alt=""
+            />
             <div>
-              <span>adidas</span>
-              <h4>Cartoon</h4>
-              <img src="" alt="" />
-              <span>$78 <img src="" alt="" /></span>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
             </div>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="featured__card card">
+            <img
+              class="card__img"
+              src="/assets/models/camiseta branca fem costas.jpg"
+              alt=""
+            />
             <div>
-              <span>adidas</span>
-              <h4>Cartoon</h4>
-              <img src="" alt="" />
-              <span>$78 <img src="" alt="" /></span>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
+            </div>
+          </div>
+          <div class="featured__card card">
+            <img
+              class="card__img"
+              src="/assets/models/camiseta branca masc.jpg"
+              alt=""
+            />
+            <div>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
+            </div>
+          </div>
+          <div class="featured__card card">
+            <img
+              class="card__img"
+              src="/assets/models/camiseta branca masc costas.jpg"
+              alt=""
+            />
+            <div>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
+            </div>
+          </div>
+          <div class="featured__card card">
+            <img class="card__img" src="/assets/layout/prancheta1.png" alt="" />
+            <div>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
+            </div>
+          </div>
+          <div class="featured__card card">
+            <img class="card__img" src="/assets/layout/prancheta2.png" alt="" />
+            <div>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
             </div>
           </div>
         </div>
       </section>
 
-      <aside>
-        <h4>Reapir Services</h4>
-        <h3>Up to <span>70% Off</span> - All t-Shirts & Accessories</h3>
-        <a href="">Explore More</a>
+      <aside class="publicity">
+        <h4 class="publicity__fourthtitle">Reapir Services</h4>
+        <h3 class="publicity__thirdtitle">
+          Up to <span class="publicity__discount">70% Off</span> - All t-Shirts
+          & Accessories
+        </h3>
+        <a class="publicity__link" href="">Explore More</a>
       </aside>
 
-      <section class="section">
-        <h2>New Arrivals</h2>
-        <p>Summer Collection New Morden Design</p>
-        <div>
-          <div>
-            <img src="" alt="" />
+      <section class="section arrivals">
+        <h2 class="arrivals__subtitle">New Arrivals</h2>
+        <p class="arrivals__text">Summer Collection New Morden Design</p>
+        <div class="arrivals__cards">
+          <div class="arrivals__card card">
+            <img class="card__img" src="" alt="" />
             <div>
-              <span>adidas</span>
-              <h4>Cartoon</h4>
-              <img src="" alt="" />
-              <span>$78 <img src="" alt="" /></span>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
             </div>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="arrivals__card card">
+            <img class="card__img" src="" alt="" />
             <div>
-              <span>adidas</span>
-              <h4>Cartoon</h4>
-              <img src="" alt="" />
-              <span>$78 <img src="" alt="" /></span>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
+            </div>
+          </div>
+          <div class="arrivals__card card">
+            <img class="card__img" src="" alt="" />
+            <div>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
+            </div>
+          </div>
+          <div class="arrivals__card card">
+            <img class="card__img" src="" alt="" />
+            <div>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
+            </div>
+          </div>
+          <div class="arrivals__card card">
+            <img class="card__img" src="" alt="" />
+            <div>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
+            </div>
+          </div>
+          <div class="arrivals__card card">
+            <img class="card__img" src="" alt="" />
+            <div>
+              <span class="card__brand">adidas</span>
+              <h4 class="card__fourthtitle">Cartoon</h4>
+              <img class="card__rating" src="" alt="" />
+              <span class="card__value"
+                >$78 <span><img class="card__shopcart" src="" alt="" /></span
+              ></span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div>
+      <section class="section latest">
+        <div class="latest__cards">
           <div>
-            <div>
-              <span>crazy deals</span>
-              <h4>buy 1 get 1 free</h4>
-              <p>The best classic dress is on sole at cora</p>
-              <a href="">Learn More</a>
+            <div class="latest__deals card-deals">
+              <span class="card-deals__tag">crazy deals</span>
+              <h4 class="card-deals__fourthtitle">buy 1 get 1 free</h4>
+              <p class="card-deals__text">
+                The best classic dress is on sole at cora
+              </p>
+              <a class="card-deals__link" href="">Learn More</a>
             </div>
           </div>
           <div>
-            <div>
-              <span>spring/summer</span>
-              <h4>upcomming season</h4>
-              <p>The best classic dress is on sole at cora</p>
-              <a href="">Collection</a>
+            <div class="latest__deals card-deals">
+              <span class="card-deals__tag">spring/summer</span>
+              <h4 class="card-deals__fourthtitle">upcomming season</h4>
+              <p class="card-deals__text">
+                The best classic dress is on sole at cora
+              </p>
+              <a class="card-deals__link" href="">Collection</a>
             </div>
           </div>
         </div>
-        <div>
-          <div>
-            <h4>SEASONAL SALE</h4>
-            <p class="red">Winter Collection -50% OFF</p>
+        <div class="latest__cards">
+          <div class="latest__category card-category">
+            <h4 class="card-category__fourthtitle">SEASONAL SALE</h4>
+            <p class="card-category__text red">Winter Collection -50% OFF</p>
           </div>
           <div>
-            <h4>NEW FOOTWEAR COLLECTION</h4>
-            <p class="red">Spring/Summer2022</p>
+            <h4 class="card-category__fourthtitle">NEW FOOTWEAR COLLECTION</h4>
+            <p class="card-category__text red">Spring/Summer2022</p>
           </div>
           <div>
-            <h4>T-SHIRTS</h4>
-            <p class="red">New Trendy Prints</p>
+            <h4 class="card-category__fourthtitle">T-SHIRTS</h4>
+            <p class="card-category__text red">New Trendy Prints</p>
           </div>
         </div>
       </section>

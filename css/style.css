@@ -90,3 +90,19 @@ header {
     margin: 0 10px;
   }
 }
+
+.cards:first-child {
+  background-image: url(/assets/layout/prancheta1.png);
+}
+
+.cards:nth-child(2) {
+  background-image: url(/assets/layout/prancheta2.png);
+}
+
+.cards:last-child {
+  background-image: url(/assets/layout/prancheta3.png);
+}
+
+section {
+  padding: 35px 20px;
+}

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +18,19 @@ header {
   padding: 8px;
 }
 
+body {
+  background-color: lightgray;
+}
+
 .logo {
   z-index: 2;
+  text-decoration: none;
+  font-family: "Noto Serif JP", serif;
+  color: black;
+}
+
+.home {
+  background-color: gray;
 }
 
 .dropdown {
@@ -71,13 +82,15 @@ header {
 
 .menu__link {
   margin: 10px 0;
-  color: black;
+  color: orangered;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
 .menu__link:hover {
   display: inline-block;
   transform: scale(1.2);
+  border-bottom-color: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -185,9 +198,6 @@ section {
   color: blueviolet;
 }
 
-.logo {
-  text-decoration: none;
-}
 .logo__figure {
   width: 50px;
   height: 50px;

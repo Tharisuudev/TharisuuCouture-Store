@@ -29,10 +29,6 @@ body {
   color: black;
 }
 
-.home {
-  background-color: gray;
-}
-
 .dropdown {
   height: 100%;
 }
@@ -45,8 +41,8 @@ body {
   border: none;
   border-radius: 20%;
   padding: 10px;
-  background-color: rgb(0, 0, 0, 0.8);
-  color: white;
+  background-color: orangered;
+  color: rgb(255, 255, 255);
 }
 
 .dropdown__button:after {
@@ -85,6 +81,7 @@ body {
   color: orangered;
   text-decoration: none;
   border-bottom: 2px solid transparent;
+  font-family: "Poppins", sans-serif;
 }
 
 .menu__link:hover {
@@ -125,7 +122,7 @@ body {
   }
 }
 
-.cards:first-child {
+/* .cards:first-child {
   background-image: url(/assets/layout/prancheta1.png);
 }
 
@@ -135,15 +132,15 @@ body {
 
 .cards:last-child {
   background-image: url(/assets/layout/prancheta3.png);
-}
+} */
 
 section {
-  padding: 35px 20px;
+  padding: 35px 50px;
 }
-/* GENERIC CARDS  */
+/* CARDS PART  */
 
 .card {
-  height: 500px;
+  height: fit-content;
   width: 100%;
   border-radius: 8px;
   padding: 18px;
@@ -157,12 +154,12 @@ section {
 
 .card__brand {
   font-size: 2rem;
-  color: pink;
+  color: crimson;
 }
 
 .card__fourthtitle {
   font-size: 2rem;
-  color: orangered;
+  color: crimson;
 }
 
 .card__value {
@@ -174,6 +171,8 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+/* FEATURE PART CSS  */
 
 .featured {
   display: flex;
@@ -190,26 +189,144 @@ section {
 }
 
 .featured__subtitle {
+  font-size: 2.4rem;
   color: black;
 }
 
 .featured__text {
-  font-size: 2rem;
-  color: blueviolet;
+  font-size: 1.4rem;
+  color: crimson;
 }
+
+/* LOGO FEATURE PART  */
 
 .logo__figure {
   width: 50px;
   height: 50px;
 }
 
+/* HOME DESIGN PART  */
+
 .home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
 }
 .home__fourthtitle {
+  color: whitesmoke;
 }
 .home__title {
+  color: whitesmoke;
 }
 .home__text {
+  color: aquamarine;
+}
+.home__link {
+  display: inline-block;
+  margin-top: 16px;
+  border: 2px solid orangered;
+  padding: 15px;
+  color: whitesmoke;
 }
 .home__img {
+}
+
+.featured {
+}
+
+.featured__subtitle {
+}
+
+.featured__text {
+}
+
+.featured__cards {
+}
+
+.featured__card {
+}
+
+.card {
+}
+
+.card__img {
+}
+
+.card__brand {
+}
+
+.card__fourthtitle {
+}
+
+.card__rating {
+}
+
+.card__value {
+}
+
+.card__shopcart {
+}
+
+.publicity {
+}
+
+.publicity__fourthitle {
+}
+
+.publicity__thirditle {
+}
+
+.publicity__discount {
+}
+
+.publicity__link {
+}
+
+.arrivals {
+}
+
+.arrivals__subtitle {
+}
+
+.arrivals__text {
+}
+
+.arrivals__cards {
+}
+
+.latest {
+}
+
+.latest__cards {
+}
+
+.latest__deals {
+}
+
+.card-deals {
+}
+
+.card-deals__tag {
+}
+
+.card-deals__fourthtitle {
+}
+
+.card-deals__text {
+}
+
+.card-deals__link {
+}
+
+.latest__category {
+}
+
+.card-category {
+}
+
+.card-category__fourthtitle {
+}
+
+.card-category__text {
 }
